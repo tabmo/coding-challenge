@@ -1,0 +1,8 @@
+.idea
+*~
+target
+project/project
+project/target
+logs/*
+
+exercices/1-dna/src/main/scala/dna/DnaToolsSolution.scala
