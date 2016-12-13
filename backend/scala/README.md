@@ -11,4 +11,4 @@
 
 N'oubliez pas que les solutions les plus simples sont les meilleures (vous pouvez utilisez toutes les fonctions fournies par Scala, nul besoin de réinventer la roue).
 
-Et N'hésitez pas à me contacter si vous avez besoin de plus d'informations.
+Et n'hésitez pas à me contacter si vous avez besoin de plus d'informations.
