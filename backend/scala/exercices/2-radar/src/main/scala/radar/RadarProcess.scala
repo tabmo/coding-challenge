@@ -1,7 +1,17 @@
 package radar
 
-object RadarProcess extends App {
+import scala.collection.mutable.ListBuffer
+import scala.io.Source
 
-  println("hello world")
+object RadarProcess {
+  
+  def main(args: Array[String]): Unit = {
+    args.foreach { arg =>
+      val inputFile = new FileParser(arg)
+      inputFile.parseFile()
+      inputFile.processData()
+      println(" - - - -")
+    }
+  }
 
 }
