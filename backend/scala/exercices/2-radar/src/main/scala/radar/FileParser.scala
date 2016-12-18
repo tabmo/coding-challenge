@@ -14,6 +14,10 @@ class FileParser(fileName: String) {
   private var fileDataInfo = new ListBuffer[(String, String, String)]()
   private var maxSpeed: Int = 0
 
+  /**
+    * Parses the file and update maxSpeed and fileDataInfo (data from file lines except first) variables
+    */
+
   def parseFile() {
     for (line <- Source.fromFile(file).getLines()) {
       if (patternFirstLine.findFirstMatchIn(line) != None) {
