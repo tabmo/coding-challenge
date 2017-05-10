@@ -20,7 +20,6 @@ Les données du films envoyées par le client doivent respecter le format suivan
 
 Type Movie :
 
-
 Champ                    | Champ json     | requis ?  | Commentaire
 -------------------------|----------------|-----------|----------------------------
 Titre                    | title          | oui       | 250 caractères maximum
@@ -34,7 +33,9 @@ Note                     | ranking        | requis    | note entre 0 et 10, pas 
 
 Si les données envoyées par le client ne sont pas valides, une (ou des) erreurs doivent êtres retournées pour faciliter la correction des données invalides
 
-Indications : Afin de réduire le périmètre du homework, les données seront stockées en mémoire (ex: dans un ListBuffer) plutôt que dans une base de données.
+**Indications** : Afin de réduire le périmètre du homework
+
+**Bonus** : Persister les données dans une base de donnée
 
 #### US 1-2 : En tant qu'utilisateur, je veux lister les films préalablement enregistées, en filtrant par genre
 
@@ -66,6 +67,8 @@ Note : Ne pas se contenter de récupérer le language majoritaire de chaque dép
 Calculer le nombre d'issues ajoutées sur un projet par jour, au cours des 30 derniers jours.
 
 Ces données serviront au client à générer un graphique présentant en ordonnée le nombre d'issue, et en abscisse la projection des 30 derniers jours. La valeur 0 doit être indiquée pour les jours sans contributions.
+
+**Bonus** : Utiliser l'API GraphQL de github à la place de l'api REST
 
 ## Epic 3 : Indicateurs temps réel
 
