@@ -33,7 +33,7 @@ Note                     | ranking        | requis    | note entre 0 et 10, pas 
 
 Si les données envoyées par le client ne sont pas valides, une (ou des) erreurs doivent êtres retournées pour faciliter la correction des données invalides
 
-**Indications** : Afin de réduire le périmètre du homework
+**Indications** : Afin de réduire le périmètre du homework, les données seront stockées en mémoire (ex: dans un ListBuffer) plutôt que dans une base de données.
 
 **Bonus** : Persister les données dans une base de donnée
 
