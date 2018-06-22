@@ -1,4 +1,4 @@
-# Homework Tabmo v1.0
+# Homework Tabmo API
 
 _Time to get things done!_
 
