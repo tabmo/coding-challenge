@@ -25,7 +25,7 @@ Vous devrez également intégrer une base de données key-value (RocksDB, Redis,
  * Serveur Kafka 1.0.0+
  * Base de données key-value
  * Jeu de données 
-([télécharger](https://s3-eu-west-1.amazonaws.com/static.tabmo.io/jobs/dataeng/tweets.json))
+([télécharger](https://s3-eu-west-1.amazonaws.com/static.tabmo.io/jobs/dataeng/tweets-v2.json))
 
 Le jeu de données devra être ingéré dans kafka: `./kafka-console-producer.sh --broker-list 0.0.0.0:9092 --topic tweets < tweets.json`
 
