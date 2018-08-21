@@ -1,16 +1,15 @@
-# Traitement des séquences ADN
+# Taux de conversion de devises monétaires
 
 ## Objectif
 
-Ce workshop consiste en plusieurs fonctions travaillant sur des séquences ADN (séquences de bases A-T-C-G).
+Ce workshop consiste en plusieurs fonctions travaillant sur des devises monétaires et leur taux de conversion.
 
-Le code doit etre implémenté dans le fichier DnaTools.scala. Chaque instruction `???` doit etre remplacée par le code répondant au problème exposé.<br>
-La difficulté des fonctions est progressive, et il n'est pas nécessaire d'en finir une pour passer à la suivante.<br>
+Le code doit etre implémenté dans les fichiers CurrencyRateFetcher.scala et CurrencyRateService.scala. Chaque instruction `???` doit etre remplacée par le code répondant au problème exposé.
 
-Ces exercices ont pour objectif de montrer votre compréhension de l'[API collection](http://www.scala-lang.org/api/current/scala/collection/Seq.html) de scala.
-Toutes les méthodes fournies par l'api scala sont autorisées, la plupart des fonctions se résument à quelques lignes utilisant astucieusement la richesse de l'api collection de Scala.
+Ces exercices ont pour objectif de montrer votre compréhension de l'exécution d'opération asynchrone à l'aide de Future (dans ce cas-ci, pour effectuer un appel HTTP).
+Toutes les méthodes fournies par l'api scala sont autorisées.
 
-Des jeux de tests sont déjà fournis dans la classe `DnaToolsSpec.scala`. A minima, tous les tests déjà écrits doivent passer avec succès, et il vous est possible
+Des jeux de tests sont déjà fournis dans les classes `CurrencyRateFetcherSpec.scala` et `CurrencyRateServiceSpec.scala`. A minima, tous les tests déjà écrits doivent passer avec succès, et il vous est possible
 d'en écrire des supplémentaires si nécessaire.
 
 ## Comment lancer le projet ?
@@ -25,7 +24,7 @@ julien$ sbt
 [info] Loading global plugins from /home/julien/.sbt/0.13/plugins
 [info] Loading project definition from /home/julien/work/projects/homework/backend/scala/project
 [info] Set current project to tabmo-homework-scala (in build file:/home/julien/work/projects/homework/backend/scala/)
-> project dna
+> project currencies
 [info] Set current project to dna (in build file:/home/julien/work/projects/homework/backend/scala/)
 > test
 ```
