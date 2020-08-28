@@ -51,9 +51,11 @@ sur le serveur d'enchère.
 Pour ce challenge, une solution plus simple sera mise en place : la liste des campagnes sera lue depuis un fichier au démarage de l'application et ne sera plus jamais modifiée.
 Il suffira donc de la lire/parser au chargement de l'application, et de garder la liste des campagnes en mémoire.
 
-Le format d'une campagne publicitaire suit le schéma JSON suivant :
+[Liste des campagnes](https://raw.githubusercontent.com/tabmo/coding-challenge/master/backend/cpp/campaigns.json)
 
 #### Représentation d'une campagne
+
+Le format d'une campagne publicitaire suit le schéma JSON suivant :
 
 ```
 {
