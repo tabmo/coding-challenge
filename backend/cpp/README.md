@@ -57,7 +57,7 @@ Il suffira donc de la lire/parser au chargement de l'application, et de garder l
 
 Le format d'une campagne publicitaire suit le schéma JSON suivant :
 
-```
+```json
 {
     "id": "c9c71e5a-4c24-493a-a7a0-436021af8252",
     "budget": "100",
@@ -127,7 +127,7 @@ La vérification sera faite avec le champ `device.ifa` de la bid-request. La com
 
 Les bid-requests seront envoyées via une requête HTTP `POST` sur l'endpoint `/rtb` avec un payload JSON.
 
-```
+```json
 {
     "id": "488d874f-927a-454b-aedc-2288809f6009",
     "device": {
@@ -156,7 +156,7 @@ Les bid-requests seront envoyées via une requête HTTP `POST` sur l'endpoint `/
 | IFA                          | `device.ifa`   | non      | Identifiant publicitaire du terminal                         |
 | Constructeur                 | `device.make`  | non      | Nom du constructeur du terminal                              |
 | Modèle                       | `device.model` | non      | Code du modèle du terminal                                   |
-| Langage                      | `device.lag`   | oui      | Langue par défaut du terminal                                |
+| Langage                      | `device.lang`  | oui      | Langue par défaut du terminal                                |
 | Largeur                      | `device.w`     | oui      | Largeur de l'emplacement publicitaire                        |
 | Hauteur                      | `device.h`     | oui      | Hauteur de l'emplacement publicitaire                        |
 | Nom de l'application         | `app.name`     | non      | Nom de l'application contenant l'emplacement publicitaire    |
@@ -188,11 +188,11 @@ Une fois le mécanisme de sélection terminé, si aucune campagne n'a été sél
 
 Si une campagne a été sélectionnée, le serveur renverra une réponse `Ok` avec les informations suivantes :
 
-```
+```json
 {
     "auctionId": "488d874f-927a-454b-aedc-2288809f6009",
     "campaignId": "c9c71e5a-4c24-493a-a7a0-436021af8252",
-    "url": "http://www.myAdUrl.com/FgTvfvoP",
+    "url": "http://cdn.tabmo.io/ads/1",
     "price": "0.12"
 }
 ```
