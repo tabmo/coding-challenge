@@ -4,15 +4,15 @@ _Time to get things done!_
 
 L'objectif du homework est de développer une application répondant aux besoins exprimés par le responsable fonctionnel. L'application devra exposer une API respectant le style d'architecture REST. Le développement du client (HTML/JS) ne rentre pas dans le cadre de ce homework.
 
-N'hésitez pas à contacter la personne jouant le rôle de responsable fonctionnel (julien.lafont@tabmo.io) si vous avez la moindre question ou incertitude concernant les spécifications décrites ci-dessous.
+N'hésitez pas à contacter la personne jouant le rôle de responsable fonctionnel (sebastien.couniot@tabmo.io) si vous avez la moindre question ou incertitude concernant les spécifications décrites ci-dessous.
 
-**Important** : Sur les 3 [epics](http://www.fabrice-aimetti.fr/dotclear/index.php?post/2009/08/20/La-difference-entre-les-termes-Agiles-Themes-Epics-et-User-Stories) décrites ci-dessous, nous vous demandons d'en réaliser **2** pour ce homework. Vous êtes libre de sélectionner les thématiques que vous trouvez les plus intéressantes ou les plus challengeantes.
+**Important** : Sur les 2 [epics](http://www.fabrice-aimetti.fr/dotclear/index.php?post/2009/08/20/La-difference-entre-les-termes-Agiles-Themes-Epics-et-User-Stories) décrites ci-dessous, nous vous demandons d'en réaliser **1** pour ce homework. Vous êtes libre de sélectionner la thématique que vous trouvez la plus intéressante ou la plus challengeante.
 
 Voici les fonctionnalités telles que décrites par le responsable fonctionnel :
 
 ## Epic 1 : Gestion d'une médiathèque
 
-La première partie de l'application simulera les fonctions essentielles d'une médiathèque en ligne, c'est à dire ajouter et lister les films que possède l'utilisateur.
+La première partie de l'application simulera les fonctions essentielles d'une médiathèque en ligne, c'est-à-dire ajouter et lister les films que possède l'utilisateur.
 
 #### US 1-1 : En tant qu'utilisateur, je veux ajouter un film à la médiathèque pour le retrouver ultérieurement.
 
@@ -70,34 +70,9 @@ Ces données serviront au client à générer un graphique présentant en ordonn
 
 **Bonus** : Utiliser l'API GraphQL de github à la place de l'api REST
 
-## Epic 3 : Indicateurs temps réel
-
-Cette épic a pour objectif la mise en place d'une communication temps réel entre un client et un serveur via une connexion web-socket.
-
-#### US 3-1 : En tant qu'utilisateur, je veux m'abonner à un repository pour recevoir à un intervalle régulier le nombre d'étoiles (stars) de ce dépôt.
-
-Exemple d'ordre communiqué à la websocket : ```{"action": "subscribe", "repository": "xx/yy", "interval": 10 }```
-
-#### US 3-2 : En tant qu'utilisateur, je veux me désabonner à un repository pour ne plus recevoir les informations le concernant
-
-Exemple d'ordre communiqué à la websocket : ```{"action": "unsubscribe", "repository": "xx/yy"}```
-
-#### US 3-3 : En tant qu'utilisateur, je veux recevoir en temps réel le nombre de stars des projets auxquels je me suis abonné, selon l'intervalle de temps défini lors de la soubscription.
-
-Exemple de scénario de communication avec la websocket :
-
-```
-00:00:00 >> {"action": "subscribe", "repository": "xx/yy", "interval": 10}
-00:00:03 >> {"action": "subscribe", "repository": "yy/zz", "interval": 5}
-00:00:08 << {"repository": "xx/zz", "stars": 80 }
-00:00:10 << {"repository": "xx/yy", "stars": 3 }
-00:00:16 << {"repository": "xx/zz", "stars": 81 }
-```
-
 # Contraintes techniques :
 
-Nous n'imposons pas de choix concernant le language et le framework à utiliser. Choisissez un language/framework qui vous permettra de répondre efficacement à ces problématiques.
-Seule l'utilisation d'un modèle d'acteur est imposée pour l'épic 3.
+Le langage imposé est le Scala. Nous n'imposons pas de choix concernant le framework à utiliser. Choisissez un framework qui vous permettra de répondre efficacement à ces problématiques.
 
 # Un dernier mot :
 
